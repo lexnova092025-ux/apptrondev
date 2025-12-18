@@ -1,7 +1,7 @@
 import styles from './styles.module.css';
-import SmartCompShowcase from '../../app/components/SmartCompShowcase';
-import PropsTable from '../../app/components/PropsTable';
-import DemoPlayground from '../../app/components/DemoPlayground';
+import SmartCompShowcase from '../components/SmartCompShowcase';
+import PropsTable from '../components/PropsTable';
+import DemoPlayground from '../components/DemoPlayground';
 
 export default function SmartCompPage() {
   return (

@@ -16,7 +16,8 @@ if (-not (Test-Path -Path .git)) {
 
 git add .
 
-$hasCommit = git rev-parse --verify HEAD 2>$null
+# Check for existing commits (suppress output)
+git rev-parse --verify HEAD 2>$null > $null
 if ($LASTEXITCODE -ne 0) {
   git commit -m "chore: initial Next.js setup for Apptrondev home"
   Write-Output "Initial commit created."
