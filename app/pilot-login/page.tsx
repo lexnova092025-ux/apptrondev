@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function PilotLogin({ searchParams }: any) {
+export default function PilotLogin() {
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
 
@@ -23,7 +23,8 @@ export default function PilotLogin({ searchParams }: any) {
       } else {
         setMsg(json.message || 'Senha incorreta');
       }
-    } catch (err) {
+    } catch (error) {
+      console.error(error);
       setMsg('Erro ao autenticar');
     }
   }

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './styles.module.css';
 import SmartCompShowcase from '../components/SmartCompShowcase';
 import PropsTable from '../components/PropsTable';
@@ -41,9 +42,9 @@ export default function SmartCompPage() {
       </section>
 
       <section style={{ padding: '48px', textAlign: 'center' }}>
-        <a href="/" style={{ display: 'inline-flex', padding: '10px 18px', borderRadius: 999, background: 'var(--text-primary)', color: 'var(--background)' }}>
+        <Link href="/" style={{ display: 'inline-flex', padding: '10px 18px', borderRadius: 999, background: 'var(--text-primary)', color: 'var(--background)' }}>
           Voltar à Home
-        </a>
+        </Link>
       </section>
     </div>
   );
