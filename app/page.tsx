@@ -1,71 +1,105 @@
-import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "./home.module.css";
 
 export default function Home() {
   return (
     <div>
-      <section className={styles.hero} aria-label="Hero — Apptrondev">
-        <img src="/branding/apptrondev-hero.svg" alt="Apptrondev" className={styles.heroBg} />
+      <section className={styles.hero} aria-label="Hero">
+        <div className={styles.heroLogoContainer}>
+          <div className={styles.logoLarge}>
+            <span className={styles.logoA}>A</span>
+            <div className={styles.logoText}>
+              <span className={styles.logoApp}>apptron</span>
+              <span className={styles.logoDev}>dev</span>
+            </div>
+          </div>
+        </div>
 
-        <div className={styles.heroContent}>
-          <img src="/branding/logo.svg" alt="Apptrondev" className={styles.heroLogo} />
+        <h1>Apptrondev</h1>
+        <p>Plataforma de aplicativos SaaS para empresas que buscam automação, eficiência e controle inteligente.</p>
+        <a href="#apps" className={styles.ctaButton}>Conhecer soluções →</a>
+      </section>
 
-          <h1 className={styles.h1}>Apptrondev</h1>
-          <p className={styles.lead}>
-            Plataforma de aplicativos SaaS para empresas que buscam automação,
-            eficiência e controle inteligente.
-          </p>
+      <section id="apps" className={styles.appsSection}>
+        <div className={styles.container}>
+          <div className={styles.sectionHeader}>
+            <h2>Soluções Apptrondev</h2>
+            <p>Aplicativos modulares e inteligentes para empresas modernas.</p>
+          </div>
 
-          <div className={styles.heroActions}>
-            <a href="#solutions" className={styles.primary} aria-label="Conhecer soluções">
-              Conhecer soluções →
+          <div className={styles.appsGrid}>
+            <a href="/smartcomp" className={styles.appCard}>
+              <div className={styles.appIcon}>📦</div>
+              <h3>SmartComp</h3>
+              <p>Componentes inteligentes para acelerar o desenvolvimento de aplicações modernas.</p>
+              <span className={styles.appLink}>Acessar aplicativo →</span>
+            </a>
+
+            <a href="#" className={styles.appCard}>
+              <div className={styles.appIcon}>⚡</div>
+              <h3>SmartFlow</h3>
+              <p>Automação de processos, fluxos e integrações entre sistemas.</p>
+              <span className={styles.appLink}>Acessar aplicativo →</span>
+            </a>
+
+            <a href="#" className={styles.appCard}>
+              <div className={styles.appIcon}>📊</div>
+              <h3>SmartData</h3>
+              <p>Visualização, controle e organização de dados de forma simples e eficiente.</p>
+              <span className={styles.appLink}>Acessar aplicativo →</span>
             </a>
           </div>
         </div>
       </section>
 
-      <section id="solutions" className={styles.solutions}>
+      <section id="sobre" className={styles.whySection}>
         <div className={styles.container}>
-          <h2 className={styles.sectionTitle}>Soluções Apptrondev</h2>
+          <h2>Por que Apptrondev?</h2>
+          <div className={styles.featuresGrid}>
+            <div className={styles.feature}>
+              <div className={styles.featureIcon}>✓</div>
+              <h3>Arquitetura moderna e escalável</h3>
+              <p>Infraestrutura preparada para crescer com seu negócio</p>
+            </div>
 
-          <div className={styles.cards} role="list">
-            <article className={styles.card} role="listitem">
-              <h3>SmartComp</h3>
-              <p>Componentes inteligentes para acelerar o desenvolvimento de aplicações modernas.</p>
-            </article>
+            <div className={styles.feature}>
+              <div className={styles.featureIcon}>✓</div>
+              <h3>Soluções modulares e reutilizáveis</h3>
+              <p>Cada app funciona independente, mas se integra quando necessário</p>
+            </div>
 
-            <article className={styles.card} role="listitem">
-              <h3>SmartFlow</h3>
-              <p>Automação de processos, fluxos e integrações entre sistemas.</p>
-            </article>
+            <div className={styles.feature}>
+              <div className={styles.featureIcon}>✓</div>
+              <h3>Foco em automação e produtividade</h3>
+              <p>Reduza tempo em tarefas repetitivas e aumente eficiência</p>
+            </div>
 
-            <article className={styles.card} role="listitem">
-              <h3>SmartData</h3>
-              <p>Visualização, controle e organização de dados de forma simples e eficiente.</p>
-            </article>
+            <div className={styles.feature}>
+              <div className={styles.featureIcon}>✓</div>
+              <h3>Pensado para empresas e desenvolvedores</h3>
+              <p>Interface intuitiva e APIs bem documentadas</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className={styles.why}>
-        <div className={styles.containerSmall}>
-          <h2 className={styles.sectionTitle}>Por que Apptrondev?</h2>
-          <ul className={styles.benefits}>
-            <li>✔ Arquitetura moderna e escalável</li>
-            <li>✔ Foco em automação e produtividade</li>
-            <li>✔ Soluções modulares e reutilizáveis</li>
-            <li>✔ Pensado para empresas e desenvolvedores</li>
-          </ul>
-        </div>
-      </section>
-
-      <section className={styles.ctaFinal}>
-        <div className={styles.containerSmall}>
+      <section className={styles.ctaSection}>
+        <div className={styles.container}>
           <h2>Pronto para explorar a Apptrondev?</h2>
-          <a href="/smartcomp" className={styles.primary}>Acessar SmartComp →</a>
+          <a href="/smartcomp" className={styles.ctaLarge}>Acessar SmartComp →</a>
         </div>
       </section>
 
+      <section className={styles.aboutSection}>
+        <div className={styles.container}>
+          <p>
+            Apptrondev é um hub de aplicações SaaS modulares, desenvolvidas para resolver problemas reais de gestão e operação. Cada aplicativo possui identidade própria, mas compartilha uma arquitetura tecnológica escalável e integrada.
+          </p>
+        </div>
+      </section>
+
+      <footer className={styles.homeFooter}>
+        <p>© {new Date().getFullYear()} Apptrondev · Ambiente de testes (staging)</p>
+      </footer>
     </div>
   );
 }

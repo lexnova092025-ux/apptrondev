@@ -1,18 +1,20 @@
 import Link from "next/link";
 import styles from "./components.module.css";
+import homeStyles from "../home.module.css";
 
 export default function Header() {
   return (
-    <header className={styles.header}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-        <a href="/" aria-label="Go to home">
-          <img src="/branding/logo.svg" alt="Apptrondev" className={styles.logoSmall} />
+    <header className={homeStyles.homeHeader}>
+      <nav className={homeStyles.homeNav}>
+        <a href="/" className={homeStyles.homeLogo} aria-label="Ir para a home">
+          <div className={homeStyles.logoIcon}>A</div>
+          <span>Apptrondev</span>
         </a>
-      </div>
 
-      <nav className={styles.nav}>
-        <Link href="/">Home</Link>
-        <Link href="/smartcomp">SmartComp</Link>
+        <ul className={homeStyles.navLinks}>
+          <li><a href="#apps">Apps</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+        </ul>
       </nav>
     </header>
   );
