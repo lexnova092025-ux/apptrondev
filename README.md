@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Staging / Pilot deploy notes
+- Branch: `staging`
+- Deploy: connect the repository to Render and set the service branch to `staging` (or use `render.yaml`).
+- Set an environment variable on Render: `STAGE_PASSWORD` with a secure password for pilot access.
 
+To test locally with the pilot login flow:
+1. Set `STAGE_PASSWORD` locally, e.g. `export STAGE_PASSWORD=senha123` (PowerShell: `$env:STAGE_PASSWORD = "senha123"`).
+2. Run `npm run dev`, open http://localhost:3000 and you will be redirected to `/pilot-login`.
+3. Use the password to authenticate; the server will set a cookie and allow access.
 ## Getting Started
 
 First, run the development server:

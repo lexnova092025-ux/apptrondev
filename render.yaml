@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: apptrondev-staging
+    env: node
+    plan: free
+    region: oregon
+    repo: https://github.com/lexnova092025-ux/apptrondev
+    branch: staging
+    buildCommand: 'npm ci && npm run build'
+    startCommand: 'npm run start'
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: STAGE_PASSWORD
+        # Valor de exemplo — defina o real no painel do Render
+        value: "REPLACE_WITH_SECURE_PASSWORD"
+        # secure: true # Render UI allows marking secrets as secure
