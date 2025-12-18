@@ -1,3 +1,4 @@
+"use client";
 import styles from "./smartcomp.module.css";
 
 export default function SmartCompShowcase({ title = "SmartCard", subtitle = "Example" }: { title?: string; subtitle?: string }) {
