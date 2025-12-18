@@ -52,6 +52,8 @@
 
 .heroActions { margin-top: 24px; }
 
+.heroLogo { display: block; width: 220px; height: auto; margin: 0 auto 18px auto; }
+
 .primary {
   display: inline-flex;
   align-items: center;
@@ -65,6 +67,8 @@
 }
 
 .primary:hover { transform: translateY(-2px); }
+
+@media(max-width:600px){ .heroLogo{ width:160px } }
 
 .solutions { padding: 56px 16px; background: var(--bg-darker); color: var(--accent); }
 .container { max-width: 1100px; margin: 0 auto; }

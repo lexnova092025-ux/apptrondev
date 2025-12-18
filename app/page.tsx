@@ -8,6 +8,8 @@ export default function Home() {
         <img src="/branding/apptrondev-hero.svg" alt="Apptrondev" className={styles.heroBg} />
 
         <div className={styles.heroContent}>
+          <img src="/branding/logo.svg" alt="Apptrondev" className={styles.heroLogo} />
+
           <h1 className={styles.h1}>Apptrondev</h1>
           <p className={styles.lead}>
             Plataforma de aplicativos SaaS para empresas que buscam automação,

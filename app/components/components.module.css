@@ -7,6 +7,12 @@
   background: var(--background);
 }
 
+.logoSmall {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
 .brand {
   font-weight: 700;
   font-size: 18px;
@@ -38,4 +44,8 @@
   background: var(--foreground);
   color: var(--text-primary, #000);
   max-width: 720px;
+}
+
+@media (max-width: 600px) {
+  .logoSmall { height: 28px; }
 }
