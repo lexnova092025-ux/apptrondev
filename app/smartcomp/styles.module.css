@@ -1,0 +1,42 @@
+:root{
+  --sc-bg: #0b0b0b;
+  --sc-card: #0f1720;
+}
+
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:96px 24px;
+  background:var(--sc-bg);
+  color:var(--text-primary, #fff);
+  text-align:center;
+}
+
+.hero h1{font-size:40px;margin-bottom:12px}
+.hero p{color:var(--text-secondary,#999); max-width:760px;margin:0 auto}
+
+.grid{display:grid; gap:24px}
+
+.cards{display:grid; grid-template-columns:repeat(3,1fr); gap:20px}
+
+.showcaseCard{
+  border-radius:12px;
+  background:var(--foreground);
+  padding:18px;
+  color:var(--text-primary,#000);
+  border:1px solid var(--button-secondary-border);
+}
+
+.showcaseHeader{display:flex; justify-content:space-between; align-items:center; margin-bottom:12px}
+.showcaseTitle{font-weight:700}
+.showcaseSub{color:var(--text-secondary,#666)}
+.showcaseBody{font-size:14px}
+.showcaseActions{display:flex; gap:8px; margin-top:12px}
+.primary{background:var(--text-primary); color:var(--background); padding:8px 12px; border-radius:8px; border:none}
+.ghost{background:transparent; padding:8px 12px; border-radius:8px; border:1px solid var(--button-secondary-border)}
+
+@media(max-width:900px){
+  .cards{grid-template-columns:1fr}
+  .grid{gap:12px}
+}
