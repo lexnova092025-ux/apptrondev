@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--button-secondary-border);
+  background: var(--background);
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.nav a {
+  color: inherit;
+  font-weight: 500;
+}
+
+.footer {
+  padding: 24px;
+  text-align: center;
+  border-top: 1px solid var(--button-secondary-border);
+  background: var(--background);
+  color: var(--text-secondary, #666);
+  font-size: 14px;
+}
+
+.smartcard {
+  border: 1px solid var(--button-secondary-border);
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--foreground);
+  color: var(--text-primary, #000);
+  max-width: 720px;
+}
