@@ -9,17 +9,12 @@ export default function Header() {
         <Link href="/" className={homeStyles.homeLogo} aria-label="Ir para a home">
           <Image
             src="/branding/logo-apptrondev.svg"
-            alt="ApptronDev – Aplicativos SaaS"
-            className={homeStyles.logoMain}
-            width={96}
-            height={96}
+            alt="ApptronDev"
+            className={homeStyles.logoHeader}
+            width={160}
+            height={53}
             priority
           />
-
-          <div className={homeStyles.logoText}>
-            <span className={homeStyles.logoApp}>apptron</span>
-            <span className={homeStyles.logoDev}>dev</span>
-          </div>
         </Link>
 
         <ul className={homeStyles.navLinks}>
