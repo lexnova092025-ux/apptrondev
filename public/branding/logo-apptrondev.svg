@@ -8,14 +8,14 @@
     </linearGradient>
   </defs>
   
-  <!-- Ícone A estilizado -->
-  <g transform="translate(8,8)">
-    <path d="M16 56 L32 10 L64 10 L80 56 L64 56 L53 30 L43 30 L32 56 Z" fill="url(#logoGradient)" />
+  <!-- Ícone A estilizado com viewBox ajustado -->
+  <g transform="translate(4,12)">
+    <path d="M12 44 L24 8 L48 8 L60 44 L48 44 L40 24 L32 24 L24 44 Z" fill="url(#logoGradient)" />
   </g>
   
   <!-- Texto apptrondev -->
-  <g transform="translate(96,20)">
-    <text x="0" y="18" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="300" fill="#ffffff">apptron</text>
-    <text x="0" y="38" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="300" fill="rgba(255,255,255,0.6)">dev</text>
+  <g transform="translate(72,24)">
+    <text x="0" y="14" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="16" font-weight="300" fill="#ffffff">apptron</text>
+    <text x="0" y="32" font-family="Inter, system-ui, -apple-system, sans-serif" font-size="16" font-weight="300" fill="rgba(255,255,255,0.6)">dev</text>
   </g>
 </svg>
