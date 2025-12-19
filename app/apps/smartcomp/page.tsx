@@ -1,9 +1,10 @@
+import Link from 'next/link';
 import AppHero from '../../components/AppHero';
-import BenefitsSection from '../../components/BenefitsSection';
+import homeStyles from '../../home.module.css';
 
 export const metadata = {
   title: 'SmartComp — ApptronDev',
-  description: 'Compare produtos, preços e características de forma inteligente e automática.'
+  description: 'SmartComp — comparação inteligente de produtos e preços para decisões mais rápidas.'
 };
 
 export default function SmartCompPage() {
@@ -11,22 +12,101 @@ export default function SmartCompPage() {
     <main>
       <AppHero
         title="SmartComp"
-        subtitle="Compare produtos, preços e características de forma inteligente e automática."
+        subtitle="Comparação inteligente de produtos e preços para decisões mais rápidas e seguras."
         ctaLabel="Solicitar acesso"
-        ctaHref="#contact"
-        imageSrc="/assets/smartcomp-icon.png"
+        ctaHref="/contato"
+        imageSrc="/branding/logo-apptrondev.svg"
       />
 
-      <BenefitsSection
-        items={[
-          { icon: '📊', title: 'Comparação inteligente', body: 'Analise dados reais em segundos.' },
-          { icon: '⚙️', title: 'Automação', body: 'Menos trabalho manual, mais precisão.' },
-          { icon: '🔒', title: 'Privacidade', body: 'Dados tratados com segurança e controle.' },
-        ]}
-      />
+      {/* Problema → Solução */}
+      <section className={homeStyles.whySection} aria-labelledby="why-1">
+        <div className={`${homeStyles.container} ${homeStyles.sectionHeader}`}>
+          <h2 id="why-1">Comparar manualmente custa tempo e dinheiro</h2>
+          <p>
+            Planilhas, múltiplos sites e dados desatualizados tornam a tomada de decisão lenta e imprecisa.
+          </p>
+        </div>
 
-      <section style={{ padding: 24, textAlign: 'center' }}>
-        <a href="#contact" className="ctaLarge">Quero testar</a>
+        <div className={homeStyles.featuresGrid}>
+          <div className={homeStyles.feature}>
+            <div className={homeStyles.featureIcon}>⚡</div>
+            <h3>Centralização de dados</h3>
+            <p>Reúna preços, características e variações em um único lugar.</p>
+          </div>
+
+          <div className={homeStyles.feature}>
+            <div className={homeStyles.featureIcon}>📊</div>
+            <h3>Análise inteligente</h3>
+            <p>Compare automaticamente os dados mais relevantes para sua decisão.</p>
+          </div>
+
+          <div className={homeStyles.feature}>
+            <div className={homeStyles.featureIcon}>🎯</div>
+            <h3>Decisão mais rápida</h3>
+            <p>Menos tempo analisando, mais confiança na escolha.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Como funciona */}
+      <section className={homeStyles.appsSection} aria-labelledby="how-1">
+        <div className={`${homeStyles.container} ${homeStyles.sectionHeader}`}>
+          <h2 id="how-1">Como o SmartComp funciona</h2>
+          <p>Um fluxo simples, direto e eficiente</p>
+        </div>
+
+        <div className={homeStyles.featuresGrid}>
+          <div className={homeStyles.feature}>
+            <h3>1. Coleta</h3>
+            <p>O SmartComp coleta dados de produtos, preços e atributos relevantes.</p>
+          </div>
+
+          <div className={homeStyles.feature}>
+            <h3>2. Comparação</h3>
+            <p>Algoritmos organizam e comparam as informações automaticamente.</p>
+          </div>
+
+          <div className={homeStyles.feature}>
+            <h3>3. Resultado</h3>
+            <p>Você visualiza comparações claras para tomar a melhor decisão.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Para quem é */}
+      <section className={homeStyles.whySection} aria-labelledby="audience-1">
+        <div className={`${homeStyles.container} ${homeStyles.sectionHeader}`}>
+          <h2 id="audience-1">Para quem o SmartComp é ideal</h2>
+        </div>
+
+        <div className={homeStyles.featuresGrid}>
+          <div className={homeStyles.feature}>
+            <h3>Empresas</h3>
+            <p>Comparação de fornecedores, custos e benefícios de forma estruturada.</p>
+          </div>
+
+          <div className={homeStyles.feature}>
+            <h3>Times de compras</h3>
+            <p>Decisões mais rápidas e baseadas em dados reais.</p>
+          </div>
+
+          <div className={homeStyles.feature}>
+            <h3>Usuários avançados</h3>
+            <p>Comparações detalhadas sem esforço manual.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA final */}
+      <section className={homeStyles.ctaSection}>
+        <div className={homeStyles.container}>
+          <h2>Pronto para comparar de forma inteligente?</h2>
+          <p>Solicite acesso ao SmartComp e transforme sua forma de decidir.</p>
+
+          <Link href="/contato" className={homeStyles.ctaLarge}>
+            Falar com a ApptronDev
+          </Link>
+        </div>
       </section>
     </main>
   );
