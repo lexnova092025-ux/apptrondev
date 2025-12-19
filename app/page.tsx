@@ -6,9 +6,12 @@ export default function Home() {
     <div>
       <section className={styles.hero} aria-label="Hero">
         <div className={styles.heroLogoContainer}>
-          <div style={{color: 'red', fontSize: '40px', border: '2px solid yellow'}}>
-            LOGO TESTE - SE VOCÊ VÊ ISSO, ACHAMOS O ARQUIVO CERTO
-          </div>
+          <img 
+            src="/branding/logo-apptrondev.svg" 
+            alt="ApptronDev" 
+            className={styles.logoMain}
+            style={{width: '240px', height: 'auto'}}
+          />
         </div>
 
         <h1>Apptrondev</h1>

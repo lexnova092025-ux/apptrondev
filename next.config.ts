@@ -1,10 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    // Remove middleware deprecation warning
-    middlewareSourceMaps: false,
-  },
+  // Config options here
 };
 
 export default nextConfig;

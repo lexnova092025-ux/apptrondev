@@ -7,13 +7,11 @@ export default function Header() {
     <header className={homeStyles.homeHeader}>
       <nav className={homeStyles.homeNav} aria-label="Navegação principal">
         <Link href="/" className={homeStyles.homeLogo} aria-label="Ir para a home">
-          <Image
-            src="/branding/logo-apptrondev.svg"
-            alt="ApptronDev"
+          <img 
+            src="/branding/logo-apptrondev.svg" 
+            alt="ApptronDev" 
             className={homeStyles.logoHeader}
-            width={160}
-            height={53}
-            priority
+            style={{width: '160px', height: 'auto'}}
           />
         </Link>
 
