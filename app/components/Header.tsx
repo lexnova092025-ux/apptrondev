@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from 'next/image';
 import homeStyles from "../home.module.css";
 
 export default function Header() {
@@ -6,14 +7,13 @@ export default function Header() {
     <header className={homeStyles.homeHeader}>
       <nav className={homeStyles.homeNav}>
         <Link href="/" className={homeStyles.homeLogo} aria-label="Ir para a home">
-          <img
-            src="/assets/logo-apptrondev.png"
+          <Image
+            src="/branding/logo-apptrondev.svg"
             alt="ApptronDev – Aplicativos SaaS"
             className={homeStyles.logoMain}
             width={96}
             height={96}
-            loading="eager"
-            decoding="async"
+            priority
           />
 
           <div className={homeStyles.logoText}>

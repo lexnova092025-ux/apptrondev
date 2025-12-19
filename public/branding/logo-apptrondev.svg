@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">ApptronDev</title>
+  <defs>
+    <linearGradient id="logoGradient" x1="0" x2="1">
+      <stop offset="0%" stop-color="#667eea" />
+      <stop offset="50%" stop-color="#764ba2" />
+      <stop offset="100%" stop-color="#f093fb" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Ícone A estilizado -->
+  <g transform="translate(8,8)">
+    <path d="M16 56 L32 10 L64 10 L80 56 L64 56 L53 30 L43 30 L32 56 Z" fill="url(#logoGradient)" />
+  </g>
+  
+  <!-- Texto apptrondev -->
+  <g transform="translate(96,20)">
+    <text x="0" y="18" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="300" fill="#ffffff">apptron</text>
+    <text x="0" y="38" font-family="Inter, system-ui, sans-serif" font-size="18" font-weight="300" fill="rgba(255,255,255,0.6)">dev</text>
+  </g>
+</svg>

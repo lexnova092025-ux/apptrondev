@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from "./home.module.css";
 
 export default function Home() {
@@ -5,13 +6,14 @@ export default function Home() {
     <div>
       <section className={styles.hero} aria-label="Hero">
         <div className={styles.heroLogoContainer}>
-          <div className={styles.logoLarge}>
-            <span className={styles.logoA}>A</span>
-            <div className={styles.logoText}>
-              <span className={styles.logoApp}>apptron</span>
-              <span className={styles.logoDev}>dev</span>
-            </div>
-          </div>
+          <Image
+            src="/branding/logo-apptrondev.svg"
+            alt="ApptronDev"
+            className={styles.logoMain}
+            width={160}
+            height={160}
+            priority
+          />
         </div>
 
         <h1>Apptrondev</h1>

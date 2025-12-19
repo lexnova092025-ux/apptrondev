@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import styles from './app.module.css';
 
 type Props = {
@@ -13,7 +14,7 @@ export default function AppHero({ title, subtitle, ctaLabel, ctaHref = '/', imag
   return (
     <section className={styles.appHero}>
       {imageSrc && (
-        <img src={imageSrc} alt={`${title} icon`} className={styles.appHeroIcon} width={96} height={96} />
+        <Image src={imageSrc} alt={`${title} icon`} className={styles.appHeroIcon} width={96} height={96} />
       )}
 
       <h1>{title}</h1>
