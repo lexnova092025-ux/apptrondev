@@ -56,18 +56,10 @@
 @keyframes float{ 0%,100%{ transform: translateY(0) } 50%{ transform: translateY(-15px) } }
 
 .logoLarge{ display:flex; align-items:center; gap:1.5rem; filter: drop-shadow(0 20px 60px rgba(102,126,234,0.4)) }
-.logoA{
-  font-size:5rem;
-  font-weight:900;
-  background:linear-gradient(135deg,var(--accent-start),var(--accent-mid),var(--accent-end));
-  background-clip: text; /* standard */
-  -webkit-background-clip: text; /* webkit */
-  color: transparent; /* fallback */
-  -webkit-text-fill-color: transparent;
-  letter-spacing: -0.05em;
-  transform: translateY(-4px);
-}
+.logoMain{ width:96px; height:auto; object-fit:contain; padding:6px; box-sizing:content-box; filter: drop-shadow(0 18px 45px rgba(102,126,234,0.45)); }
 .logoText{ display:flex; flex-direction:column }
+.logoApp{ font-size:2.25rem; font-weight:300 }
+.logoDev{ font-size:2.25rem; font-weight:300; color: rgba(255,255,255,0.6) }
 .logoApp{ font-size:2.25rem; font-weight:300 }
 .logoDev{ font-size:2.25rem; font-weight:300; color: rgba(255,255,255,0.6) }
 

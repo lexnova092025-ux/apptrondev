@@ -4,6 +4,23 @@
   --card: #0f1720;
   --muted: #9aa3b2;
   --accent: #ffffff;
+
+  /* Design tokens base */
+  --bg-900:#0a0b0f;
+  --bg-950:#06070a;
+  --surface:rgba(255,255,255,0.04);
+  --border:rgba(255,255,255,0.08);
+
+  --text:#ffffff;
+  --muted-alt:rgba(255,255,255,0.65);
+
+  --accent-start:#667eea;
+  --accent-mid:#764ba2;
+  --accent-end:#f093fb;
+
+  --radius:16px;
+  --radius-lg:24px;
+  --max-width:1200px;
 }
 
 .hero {
