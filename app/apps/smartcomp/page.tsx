@@ -4,12 +4,53 @@ import homeStyles from '../../home.module.css';
 
 export const metadata = {
   title: 'SmartComp — ApptronDev',
-  description: 'SmartComp — comparação inteligente de produtos e preços para decisões mais rápidas.'
+  description: 'SmartComp — comparação inteligente de produtos e preços para decisões mais rápidas.',
+  keywords: ['SmartComp', 'comparação de preços', 'comparador de produtos', 'ApptronDev'],
+  authors: [{ name: 'ApptronDev', url: 'https://apptrondev.onrender.com' }],
+  applicationName: 'ApptronDev',
+  openGraph: {
+    title: 'SmartComp — ApptronDev',
+    description: 'SmartComp — comparação inteligente de produtos e preços para decisões mais rápidas.',
+    url: 'https://apptrondev.onrender.com/apps/smartcomp',
+    siteName: 'ApptronDev',
+    images: [
+      {
+        url: 'https://apptrondev.onrender.com/branding/logo-apptrondev.svg',
+        width: 120,
+        height: 120,
+        alt: 'ApptronDev logo',
+      },
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SmartComp — ApptronDev',
+    description: 'SmartComp — comparação inteligente de produtos e preços para decisões mais rápidas.',
+    images: ['https://apptrondev.onrender.com/branding/logo-apptrondev.svg'],
+  },
+  alternates: {
+    canonical: 'https://apptrondev.onrender.com/apps/smartcomp',
+  },
 };
 
 export default function SmartCompPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    name: "SmartComp",
+    description: "SmartComp — comparação inteligente de produtos e preços para decisões mais rápidas.",
+    url: "https://apptrondev.onrender.com/apps/smartcomp",
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    author: { '@type': 'Organization', name: 'ApptronDev', url: 'https://apptrondev.onrender.com' },
+    image: 'https://apptrondev.onrender.com/branding/logo-apptrondev.svg',
+  };
+
   return (
     <main>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+
       <AppHero
         title="SmartComp"
         subtitle="Comparação inteligente de produtos e preços para decisões mais rápidas e seguras."

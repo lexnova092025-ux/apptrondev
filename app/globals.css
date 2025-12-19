@@ -35,6 +35,32 @@ a {
   text-decoration: none;
 }
 
+/* Skip link for keyboard users */
+.skipLink {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skipLink:focus {
+  left: 1rem;
+  top: 1rem;
+  width: auto;
+  height: auto;
+  padding: 8px 12px;
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+/* Focus-visible for interactive elements */
+:focus-visible {
+  outline: 3px solid rgba(102,126,234,0.6);
+  outline-offset: 2px;
+} 
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

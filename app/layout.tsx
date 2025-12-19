@@ -25,14 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <a href="#main" className="skipLink">Pular para o conteúdo</a>
         <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
           <Header />
-          <main style={{ flex: 1 }}>{children}</main>
+          <main id="main" style={{ flex: 1 }}>{children}</main>
           <Footer />
         </div>
       </body>
     </html>
   );
-}
+} 

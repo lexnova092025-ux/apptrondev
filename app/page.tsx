@@ -36,19 +36,19 @@ export default function Home() {
               <span className={styles.appLink}>Acessar aplicativo →</span>
             </a>
 
-            <a href="#" className={styles.appCard}>
+            <a href="#" className={styles.appCard} aria-disabled="true" tabIndex={-1} title="SmartFlow — Em breve">
               <div className={styles.appIcon}>⚡</div>
               <h3>SmartFlow</h3>
               <p>Automação de processos, fluxos e integrações entre sistemas.</p>
-              <span className={styles.appLink}>Acessar aplicativo →</span>
+              <span className={styles.appLink}>Em breve</span>
             </a>
 
-            <a href="#" className={styles.appCard}>
+            <a href="#" className={styles.appCard} aria-disabled="true" tabIndex={-1} title="SmartData — Em breve">
               <div className={styles.appIcon}>📊</div>
               <h3>SmartData</h3>
               <p>Visualização, controle e organização de dados de forma simples e eficiente.</p>
-              <span className={styles.appLink}>Acessar aplicativo →</span>
-            </a>
+              <span className={styles.appLink}>Em breve</span>
+            </a> 
           </div>
         </div>
       </section>

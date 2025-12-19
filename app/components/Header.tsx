@@ -5,7 +5,7 @@ import homeStyles from "../home.module.css";
 export default function Header() {
   return (
     <header className={homeStyles.homeHeader}>
-      <nav className={homeStyles.homeNav}>
+      <nav className={homeStyles.homeNav} aria-label="Navegação principal">
         <Link href="/" className={homeStyles.homeLogo} aria-label="Ir para a home">
           <Image
             src="/branding/logo-apptrondev.svg"
