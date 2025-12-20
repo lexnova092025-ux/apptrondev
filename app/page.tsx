@@ -7,10 +7,10 @@ export default function Home() {
       <section className={styles.hero} aria-label="Hero">
         <div className={styles.heroLogoContainer}>
           <img 
-            src="/branding/logo-apptrondev.svg" 
+            src="/branding/logo-text-only.svg" 
             alt="ApptronDev" 
             style={{
-              width: '240px', 
+              width: '200px', 
               height: 'auto',
               display: 'block'
             }}

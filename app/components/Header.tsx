@@ -8,10 +8,10 @@ export default function Header() {
       <nav className={homeStyles.homeNav} aria-label="Navegação principal">
         <Link href="/" className={homeStyles.homeLogo} aria-label="Ir para a home">
           <img 
-            src="/branding/logo-apptrondev.svg" 
+            src="/branding/logo-text-only.svg" 
             alt="ApptronDev" 
             style={{
-              width: '160px', 
+              width: '140px', 
               height: 'auto',
               display: 'block'
             }}
