@@ -7,15 +7,15 @@ export default function Header() {
     <header className={homeStyles.homeHeader}>
       <nav className={homeStyles.homeNav} aria-label="Navegação principal">
         <Link href="/" className={homeStyles.homeLogo} aria-label="Ir para a home">
-          <div style={{
-            background: 'blue',
-            color: 'white',
-            padding: '10px',
-            fontSize: '16px',
-            fontWeight: 'bold'
-          }}>
-            TESTE DEFINITIVO - HEADER
-          </div>
+          <img 
+            src="/branding/logo-apptrondev.svg" 
+            alt="ApptronDev" 
+            style={{
+              width: '160px', 
+              height: 'auto',
+              display: 'block'
+            }}
+          />
         </Link>
 
         <ul className={homeStyles.navLinks}>
